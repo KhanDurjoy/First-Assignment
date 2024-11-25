@@ -1,0 +1,462 @@
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 30px;
+  background-color: #23f5a459; 
+}
+
+.logo {
+  background-color: blue;
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+}
+.nav-link{
+  display: flex;
+  gap:30px;
+}
+.navbar ul{
+  list-style: none;
+}
+
+.navbar a{
+  text-decoration: none;
+}
+
+.navbar .btn {
+  padding: 8px 15px;
+  background-color:#0056B3;
+  color: white;
+  border-radius: 5px;
+}
+.nav-link a{
+  color:#1E2835;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+.nav-link a:hover{
+  color: #21466d;
+}
+.nav-link .active{
+  color: #0056B3;
+}
+.hero{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-between ;
+  align-items: center;
+  padding: 40px 100px;
+  background-color: #4fbbe667;
+}
+.hero-content{
+  flex:1;
+  max-width: 500px;
+  background-color: #f4f4f4c9;
+}
+
+.hero-content h1{
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.hero-content p{
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+
+}
+.hero-content .tjust{
+  text-align: justify;
+}
+.hero-content  a {
+  text-decoration: none;
+  color: white;
+
+}
+.hero-content .btn {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  font-size: 1em;
+  border: none;
+  margin-left: 200px;
+
+
+}
+
+.hero-content .btn:hover {
+  background-color: #0056b3;
+}
+.hero-background {
+  flex:1;
+  width: 400px;
+  height: 300px;
+  display: flex;
+  border-radius: 5px;
+
+  color: #666;
+  border: 1px solid #ccc;
+}
+
+
+/* client section css */
+
+.clients-section{
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+}
+.clients-section h2 {
+  font-size: 40px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.clients-section p {
+  font-size: 1rem;
+  margin-bottom: 30px;
+  color: #666;
+}
+.clients-logos{
+ display: flex;
+ justify-content: space-around;
+ align-items: center;
+ font-size: 2rem;
+ transition: color 0.3s ease, transform 0.3s ease;
+}
+.clients-logos i:hover {
+  color: #007bff; 
+  transform: scale(1.2); 
+}
+
+.key-sectors{
+  background-color: #f10ea669;
+  font-size: 20px;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.sectors{
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+.sector{
+  flex: 1; 
+  max-width: 300px; 
+  padding: 20px;
+  text-align: center;
+  background-color:#b6ff0b7a;
+  border-color: #020101;
+  border: #df9090;
+}
+
+
+.stats-section {
+display: flex;
+justify-content: space-around;
+align-items: center;
+padding: 40px 20px;
+background-color: #f9f9f9;
+}
+
+.stats{
+
+display: flex;
+
+flex-wrap: wrap;
+
+}
+
+.stats h2 {
+display: flex;
+
+font-size: 24px;
+margin-bottom: 10px;
+color: #333;
+
+}
+
+.stats-intro p {
+font-size: 16px;
+color: #666;
+}
+
+
+.stats-details {
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+gap: 20px;
+max-width: 900px;
+width: 100%;
+}
+
+
+.stat-item {
+display: flex;
+align-items: center;
+gap: 15px;
+flex: 1 1 200px; 
+padding: 15px;
+background-color: #fff;
+border: 1px solid #ddd;
+border-radius: 8px;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.stat-item i {
+font-size: 24px;
+color: #4CAF50; 
+}
+
+.stat-item h3 {
+font-size: 20px;
+margin: 0;
+color: #333;
+}
+
+.stat-item p {
+font-size: 14px;
+margin: 0;
+color: #666;
+}
+
+
+.container {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 20px;
+}
+
+h1 {
+font-size: 28px;
+margin-bottom: 10px;
+}
+
+.description {
+font-size: 14px;
+color: #555;
+margin-bottom: 30px;
+}
+
+.card-container {
+display: flex;
+justify-content: space-between;
+gap: 20px;
+}
+
+.card {
+width: 250px;
+height: 300px;
+position: relative;
+border-radius: 12px;
+overflow: hidden;
+background-color: #df9090;
+cursor: all-scroll;
+}
+
+.image-placeholder {
+width: 100%;
+height: 100%;
+background-color: #d53ef370;
+transition: opacity 0.4s ease;
+}
+
+.card-content {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: rgba(240, 236, 24, 0.664);
+opacity: 0;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 20px;
+transition: opacity 0.3s ease;
+}
+
+.card p {
+font-size: 14px;
+margin-bottom: 15px;
+color: #020101;
+}
+
+.btn {
+text-decoration: none;
+color: #333;
+font-weight: bold;
+transition: color 0.3s ease;
+}
+
+.card:hover .image-placeholder {
+opacity: 0;
+}
+
+.card:hover .card-content {
+opacity: 1;
+}
+
+.contact-container {
+
+text-align: center;
+
+background-color: #1dcbe27c;
+border-radius: 12px;
+overflow: hidden;
+box-shadow: 0 4px 15px rgba(119, 113, 113, 0.1);
+}
+
+
+
+.contact-form {
+background-origin: border-box;
+padding: 10px;
+box-sizing: content-box;
+}
+
+.contact-form h2 {
+margin-bottom: 20px;
+font-size: 24px;
+color: #000000;
+}
+
+.form-group {
+margin-bottom: 15px;
+}
+
+.form-group label {
+display: block;
+font-weight: bold;
+margin-bottom: 5px;
+color: #555;
+}
+
+.form-group input, 
+.form-group textarea {
+width: 30%;
+padding: 10px;
+border: 1px solid #ccc;
+border-radius: 8px;
+box-sizing: border-box;
+}
+
+.button {
+background-color: #5a67d8;
+color: #fff;
+border: none;
+padding: 12px;
+
+border-radius: 8px;
+cursor: pointer;
+font-size: 16px;
+transition: background-color 0.3s ease;
+}
+
+button:hover {
+background-color: #434190;
+}
+
+
+.footer {
+background-color:#252524ce;
+color: #ffffff;
+padding: 40px 20px;
+margin:20px 0px 0px 0px;
+border-radius: 12px;
+}
+
+.footer-container {
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+max-width: 1000px;
+margin: 0 auto;
+
+}
+
+.footer-section:img {
+  width: 100px;
+  height: 100px;
+}
+
+.footer-section {
+flex: 1;
+min-width: 200px;
+margin: 10px;
+}
+
+
+
+.footer-section h3 {
+font-size: 18px;
+margin-bottom: 15px;
+color: #ffffff;
+}
+
+.footer-section ul {
+list-style: none;
+padding: 0;
+}
+
+.footer-section ul li {
+margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+color: #ffffff;
+text-decoration: none;
+transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+color: #31525070;
+}
+
+.social-icons i{
+display: inline-block;
+margin-right: 10px;
+font-size: 20px;
+text-decoration: none;
+color: #ffffff;
+}
+
+.subscribe-form {
+display: flex;
+margin-top: 10px;
+}
+
+.subscribe-form input {
+padding: 10px;
+flex: 1;
+border: none;
+border-radius: 8px 0 0 8px;
+outline: none;
+}
+
+.subscribe-form button {
+padding: 10px;
+background-color: #ccaf09;
+color: white;
+border: none;
+border-radius: 0 8px 8px 0;
+cursor: pointer;
+font-size: 16px;
+}
+
+.subscribe-form button:hover {
+background-color: #ff2d50;
+}
